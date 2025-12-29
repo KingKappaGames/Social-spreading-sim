@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_connectionGetIndex",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_connectionGetIndex",
+  "parent":{
+    "name":"socialSpreading",
+    "path":"socialSpreading.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

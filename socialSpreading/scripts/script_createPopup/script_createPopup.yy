@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_createPopup",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_createPopup",
+  "parent":{
+    "name":"socialSpreading",
+    "path":"socialSpreading.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

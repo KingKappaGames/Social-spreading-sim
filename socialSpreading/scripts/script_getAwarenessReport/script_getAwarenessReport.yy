@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_getAwarenessReport",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_getAwarenessReport",
+  "parent":{
+    "name":"socialSpreading",
+    "path":"socialSpreading.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

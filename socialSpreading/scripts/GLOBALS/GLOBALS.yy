@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"GLOBALS",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"GLOBALS",
+  "parent":{
+    "name":"socialSpreading",
+    "path":"socialSpreading.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

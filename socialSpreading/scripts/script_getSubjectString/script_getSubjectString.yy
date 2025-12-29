@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"script_getSubjectString",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"script_getSubjectString",
+  "parent":{
+    "name":"socialSpreading",
+    "path":"socialSpreading.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

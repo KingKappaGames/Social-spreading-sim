@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ENUMS",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ENUMS",
+  "parent":{
+    "name":"socialSpreading",
+    "path":"socialSpreading.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}
