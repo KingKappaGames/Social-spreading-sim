@@ -13,14 +13,14 @@ for(var _i = 0; _i < nodeCount; _i++) {
 			if(_connection.nodeIndexInArray > nodeIndexInArray) { // only draw if lower on the chain (this will give all nodes only one link per node-node connection and make all connections under node body)
 				var _strength = _connectionInfo[1];
 				
-				draw_line_width_color(X, Y, _connection.X, _connection.Y, _connectionInfo[1] * 5 + 4, nodeConnectionOutlineColor, nodeConnectionOutlineColor);
+				draw_line_width_color(X, Y, _connection.X, _connection.Y, _connectionInfo[1] * 5 + 4.5, nodeConnectionOutlineColor, nodeConnectionOutlineColor);
 				draw_line_width_color(X, Y, _connection.X, _connection.Y, _connectionInfo[1] * 5 + 3, color, _connection.color);
 			}
 		}
 		
 		//nodeRumorLengthBase
 		var _rumorsCount = array_length(rumors);
-		var _dir = 0;
+		var _dir = X * 7 + Y * 137;
 		var _baseDist = size + nodeRumorLengthBase;
 		var _length, _publicityMaxLength, _color;
 		for(var _subjectI = 0; _subjectI < _rumorsCount; _subjectI++) {
@@ -33,7 +33,7 @@ for(var _i = 0; _i < nodeCount; _i++) {
 			
 			_dir += 360 / _rumorsCount;
 		}
-		
+				
 		draw_circle(X, Y, size + nodeRumorLengthBase, true);
 		
 		draw_circle_color(X, Y, size + 1, nodeConnectionOutlineColor, nodeConnectionOutlineColor, false);

@@ -131,21 +131,15 @@ function node(xx, yy, spreadStrength, allegianceSet, connectionsArr = undefined,
 	
 	rumors = array_length(E_subjects.count - 1);
 	for(var _subjectI = 0; _subjectI < E_subjects.count; _subjectI++) {
-		rumors[_subjectI] = new rumor(_subjectI, irandom(E_allegiance.count - 1), 0);
+		rumors[_subjectI] = new rumor(self, _subjectI, script_getRumorAllegiance(_subjectI), 0);
 	}
 	
 	allegiance = allegianceSet;
 }
 
-function rumorSet() constructor {
-	for(var _i = 0; _i < E_subjects.count; _i++) {
-		var _rumor = script_getSubjectString(_i);
-		
-		struct_set(self, _rumor, new rumor(_i, irandom(E_allegiance.count - 1), 0));
-	}
-}
-
-function rumor(subjectSet, allegianceType, publicityMaxSet, publicitySpreadFactor = .03, publicityInitial = 0) constructor {
+function rumor(sourceSet, subjectSet, allegianceType, publicityMaxSet, publicitySpreadFactor = .03, publicityInitial = 0) constructor {
+	source = sourceSet;
+	
 	subject = subjectSet;
 	
 	publicity = publicityInitial;
@@ -167,7 +161,7 @@ function rumor(subjectSet, allegianceType, publicityMaxSet, publicitySpreadFacto
 	}
 	
 	static publicityUpdate = function() {
-		publicity = lerp(publicity, publicityMax, random_range(publicitySpreadStrength * .5, publicitySpreadStrength * 1.2));
+		publicity = lerp(publicity, publicityMax, random(publicitySpreadStrength * (.1 + .9 * script_getAllegianceRelationship(allegiance, source.allegiance)))); // 
 	}
 }
 

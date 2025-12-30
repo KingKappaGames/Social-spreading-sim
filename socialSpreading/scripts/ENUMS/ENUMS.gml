@@ -7,10 +7,5 @@ enum E_subjects {
 	count
 }
 
-enum E_allegiance {
-	royal = 0,
-	bandits,
-	commmoners,
-	wilds,
-	count
-}
+//replace allegiance enum her e at some piohtn 
+

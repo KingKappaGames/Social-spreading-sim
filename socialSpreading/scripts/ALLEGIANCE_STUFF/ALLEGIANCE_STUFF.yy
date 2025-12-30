@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ALLEGIANCE_STUFF",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ALLEGIANCE_STUFF",
+  "parent":{
+    "name":"socialSpreading",
+    "path":"socialSpreading.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

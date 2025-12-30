@@ -9,7 +9,7 @@ displaySprite = -1;
 width = 0;
 height = 0;
 
-widthMax = 1200;
+widthMax = 1600;
 heightMax = 0;
 
 lerpRateOpen = .24;
@@ -22,7 +22,7 @@ reset = function() {
 
 textScale = .7;
 textBoxMargin = 50;
-lineHeight = 64;
+lineHeight = 44;
 
 textAreaWidth = widthMax - textBoxMargin * 2;
 
@@ -32,7 +32,7 @@ bakeText = function() {
 	var _scale = textScale;
 	var _extraSpaceForOtherInfo = 0;
 	
-	var _text = "";
+	var _text = $"The city in the jurisdiction of {script_getAllegianceString(source.allegiance)}. \n\n";
 	
 	for(var _subjectI = 0; _subjectI < E_subjects.count; _subjectI++) {
 		var _sourceRumor = source.rumors[_subjectI];
